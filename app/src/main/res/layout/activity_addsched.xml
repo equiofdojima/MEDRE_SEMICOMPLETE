@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADDSCHED">
+
+    <ImageView
+        android:layout_width="1024dp"
+        android:layout_height="85dp"
+        android:background="@drawable/sign"></ImageView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="106dp"
+        android:layout_height="78dp"
+        android:paddingLeft="3pt"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logoo" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="ADD SCHEDULE"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Name"
+            android:background="@drawable/et_style"
+            android:layout_marginTop="125dp"
+            android:padding="10pt"
+            android:id="@+id/nameEdt"
+            android:fontFamily="@font/alata"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Medicine Name"
+            android:background="@drawable/et_style"
+            android:layout_marginTop="15dp"
+            android:padding="10pt"
+            android:id="@+id/mednameEdt"
+            android:fontFamily="@font/alata"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Quantity"
+            android:background="@drawable/et_style"
+            android:layout_marginTop="15dp"
+            android:padding="10pt"
+            android:inputType="number"
+            android:id="@+id/qtyEdt"
+            android:fontFamily="@font/alata"
+            />
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Frequency:"
+            android:textSize="18dp"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/alata"
+            />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:chipSpacingHorizontal="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/alata"
+            >
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sunday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:textSize="12sp"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/monday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textSize="12sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tuesday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:textSize="12sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/wednesday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:textSize="12sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/thursday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:textSize="12sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/friday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textSize="12sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/saturday"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:textSize="12sp" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="350sp"
+            android:layout_height="60sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="3dp"
+            android:text="ADD TIME"
+            android:fontFamily="@font/alata"
+            android:textStyle="bold"
+            android:id="@+id/timebtn"
+            android:onClick="popTimePicker"
+            android:backgroundTint="@color/yeah"
+            />
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:text="SET SCHEDULE"
+            android:fontFamily="@font/alata"
+            android:textStyle="bold"
+            android:id="@+id/setSched"
+            android:backgroundTint="@color/yeah"
+            />
+
+    </LinearLayout>
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="40sp"
+        android:text="BACK"
+        android:fontFamily="@font/alata"
+        android:textAlignment="center"
+        android:backgroundTint="@color/yeah"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
